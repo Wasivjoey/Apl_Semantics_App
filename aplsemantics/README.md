@@ -1,6 +1,6 @@
-# aplproject2019_1501061
+# aplsemantics
 
-A new Flutter project.
+A new Flutter application.
 
 ## Getting Started
 

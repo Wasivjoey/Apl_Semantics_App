@@ -1,4 +1,4 @@
-package com.example.aplproject2019_1501061
+package com.apl.aplsemantics
 
 import android.os.Bundle
 
