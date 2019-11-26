@@ -1,5 +1,11 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'About.dart';
+import 'Axiomatic.dart';
+import 'Denotational.dart';
+import 'Operational.dart';
 
 
 
@@ -8,9 +14,16 @@ class Home extends StatefulWidget{
   @override 
   _HomeState createState() => _HomeState();
   }
+  
   class _HomeState extends State<Home> {
-
     int _currentIndex =0;
+    final _pageOption =[
+      Operational(),
+      Denotational(),
+      Axiomatic(),
+      About(),
+      exit(0),
+    ];
     
     @override 
     Widget build(BuildContext context) {
@@ -18,8 +31,14 @@ class Home extends StatefulWidget{
         appBar : AppBar( title: Text('Semantics App'),
         ),
         body : Container(),
+        
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
+          onTap: (index){
+            setState(() {
+              _currentIndex = index;
+            });
+          },
           type: BottomNavigationBarType.fixed,
           iconSize: 30,
           items:[
@@ -53,13 +72,10 @@ class Home extends StatefulWidget{
               //backgroundColor: Colors.black
             ),
           ] ,
-          onTap: (index){
-            setState(() {
-              _currentIndex = index;
-            });
-          },
+          
         ),
       );
     }
 
   }
+  
