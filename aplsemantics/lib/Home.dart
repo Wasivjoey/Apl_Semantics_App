@@ -20,38 +20,38 @@ class Home extends StatefulWidget{
         body : Container(),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
-          backgroundColor: Colors.blueGrey,
+          type: BottomNavigationBarType.fixed,
           iconSize: 30,
           items:[
             BottomNavigationBarItem(
               icon: Icon(Icons.star),
               title: Text('Opperational'),
-              backgroundColor: Colors.orange
+             // backgroundColor: Colors.orange
             ),
 
             BottomNavigationBarItem(
               icon: Icon(Icons.stars),
               title: Text('Denotational'),
-              backgroundColor: Colors.blue
+             // backgroundColor: Colors.blue
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons.exit_to_app),
-              title: Text('Exit'),
-              backgroundColor: Colors.black
-            ),
-
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.brightness_auto),
               title: Text('Axiomatic'),
-              backgroundColor: Colors.red
+              //backgroundColor: Colors.red
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.portrait),
               title: Text('About'),
-              backgroundColor: Colors.green
-            )
+              //backgroundColor: Colors.green
+            ),
+
+             BottomNavigationBarItem(
+              icon: Icon(Icons.close),
+              title: Text('Exit'),
+              //backgroundColor: Colors.black
+            ),
           ] ,
           onTap: (index){
             setState(() {
