@@ -1,12 +1,25 @@
 import 'package:flutter/material.dart';
 
+
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(25.0),
-      child: Text("About REpresentation"),
-      
-    );
+          return Scaffold(
+            appBar : AppBar( 
+              title: Text('Semantics App'),
+            ),
+      body: ListView
+      (
+        children:
+        [
+          Image.asset(
+            'images/joe.jpg',
+            width: 400,
+            height: 241,
+            fit: BoxFit.cover,
+          )
+        ]
+        ),
+    ); 
   }
 }

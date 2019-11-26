@@ -38,8 +38,8 @@ class Home extends StatefulWidget{
             appBar : AppBar( 
               title: Text('Semantics App'),
             ),
-            body: //tabs[_currentIndex] , 
-            Container(),
+            body: tabs[_currentIndex] , 
+            
             
             bottomNavigationBar: BottomNavigationBar(
               currentIndex: _currentIndex,
