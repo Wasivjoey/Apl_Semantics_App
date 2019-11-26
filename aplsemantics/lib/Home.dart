@@ -16,29 +16,26 @@ class Home extends StatefulWidget{
   }
   
   class _HomeState extends State<Home> {
-    int _currentIndex =1;
-    final tabs =[ 
-          Center(child : Text('1')),
-          Center(child : Text('2')),
-          Center(child : Text('3')),
-          Center(child : Text('4')),
-          Center(child : Text('5')),
+    int _currentIndex =0;
+    Widget callPage(int _currentIndex){
+      switch (_currentIndex) {
+        case 0: return OperationalPage();
+        case 1: return  DenotationalPage();
+        case 2: return AxiomaticPage();
+        case 3: return AboutPage();
+        break;
+        default:  exit(0);
+      }
 
-          /*OperationalPage(),
-          DenotationalPage(),
-          AxiomaticPage(),
-          AboutPage(),
-          exit(0),*/
-          
-        ];
-        
+
+    }        
         @override 
         Widget build(BuildContext context) {
           return Scaffold(
             appBar : AppBar( 
               title: Text('Semantics App'),
             ),
-            body: tabs[_currentIndex] , 
+            body: callPage(_currentIndex), 
             
             
             bottomNavigationBar: BottomNavigationBar(

@@ -10,7 +10,7 @@ class AboutPage extends StatelessWidget {
   {
       Widget titleSection = Container
       (
-        
+        padding: const EdgeInsets.all(33),
                           child: Column
                           (
                             children: [
@@ -44,8 +44,9 @@ class AboutPage extends StatelessWidget {
             width: 400,
             height: 241,
             fit: BoxFit.cover,
-          )
-        ]
+          ),
+          titleSection,
+        ],
         ),
     ); 
   }
