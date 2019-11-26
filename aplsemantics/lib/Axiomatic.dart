@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Axiomatic extends StatelessWidget {
+class AxiomaticPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

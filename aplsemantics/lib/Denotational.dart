@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Denotational extends StatelessWidget {
+class DenotationalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
