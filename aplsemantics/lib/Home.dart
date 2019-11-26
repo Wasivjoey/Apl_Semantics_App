@@ -20,24 +20,25 @@ class Home extends StatefulWidget{
         body : Container(),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
+          backgroundColor: Colors.blueGrey,
           iconSize: 30,
           items:[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.star),
               title: Text('Opperational'),
               backgroundColor: Colors.orange
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.stars),
               title: Text('Denotational'),
               backgroundColor: Colors.blue
             ),
 
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.exit_to_app),
               title: Text('Exit'),
-              backgroundColor: Colors.yellowAccent
+              backgroundColor: Colors.black
             ),
 
             BottomNavigationBarItem(
