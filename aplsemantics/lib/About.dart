@@ -32,9 +32,6 @@ class AboutPage extends StatelessWidget {
           
       );
           return Scaffold(
-            appBar : AppBar( 
-              title: Text('Semantics App'),
-            ),
       body: ListView
       (
         children:
