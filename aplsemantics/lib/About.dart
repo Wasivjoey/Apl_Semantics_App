@@ -52,7 +52,7 @@ class AboutPage extends StatelessWidget {
             height: 241,
             fit: BoxFit.cover,
           ),
-          titlseSection,
+          titleSection,
 
         ],
         ),

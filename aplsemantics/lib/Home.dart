@@ -21,12 +21,12 @@ class Home extends StatefulWidget{
     Widget callPage(int _currentIndex){
       switch (_currentIndex) {
         case 0: return OperationalPage();
-        //case 1: return  DenotationalPage();
+        case 1: return  DenotationalPage();
         case 2: return AxiomaticPage();
         case 3: return AboutPage();
         break;
         default:  exit(0);
-        
+       
       }
 
 
