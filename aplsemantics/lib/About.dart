@@ -26,7 +26,17 @@ class AboutPage extends StatelessWidget {
                             (
                               'University Of Technology Jamaica',
                             style: TextStyle(fontWeight: FontWeight.bold),
-                            )
+                            ),
+                            Text 
+                            (
+                              'Framework : Flutter',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            Text 
+                            (
+                              'Created November 28, 2019',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
                           ],
                          )
           
@@ -37,12 +47,13 @@ class AboutPage extends StatelessWidget {
         children:
         [
           Image.asset(
-            'joe.jpg',
+            'joe.png',
             width: 400,
             height: 241,
             fit: BoxFit.cover,
           ),
           titleSection,
+          
         ],
         ),
     ); 
