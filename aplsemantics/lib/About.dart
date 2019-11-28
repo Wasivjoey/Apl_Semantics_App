@@ -1,4 +1,4 @@
-import 'dart:ui' as prefix0;
+
 
 import 'package:flutter/material.dart';
 
@@ -53,7 +53,7 @@ class AboutPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           titleSection,
-          
+
         ],
         ),
     ); 
