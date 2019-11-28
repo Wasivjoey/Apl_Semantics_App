@@ -27,6 +27,7 @@ class Home extends StatefulWidget{
         break;
         default:  exit(0);
        
+
       }
 
 
@@ -53,31 +54,26 @@ class Home extends StatefulWidget{
                 BottomNavigationBarItem(
                   icon: Icon(Icons.star),
                   title: Text('Operational'),
-                 // backgroundColor: Colors.orange
                 ),
     
                 BottomNavigationBarItem(
                   icon: Icon(Icons.stars),
                   title: Text('Denotational'),
-                 // backgroundColor: Colors.blue
                 ),
     
                 BottomNavigationBarItem(
                   icon: Icon(Icons.brightness_auto),
                   title: Text('Axiomatic'),
-                  //backgroundColor: Colors.red
                 ),
     
                 BottomNavigationBarItem(
                   icon: Icon(Icons.portrait),
                   title: Text('About'),
-                  //backgroundColor: Colors.green
                 ),
     
                  BottomNavigationBarItem(
                   icon: Icon(Icons.close),
                   title: Text('Exit'),
-                  //backgroundColor: Colors.black
                 ),
               ] ,
               
