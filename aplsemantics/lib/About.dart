@@ -37,7 +37,7 @@ class AboutPage extends StatelessWidget {
         children:
         [
           Image.asset(
-            'images/joe.jpg',
+            'joe.jpg',
             width: 400,
             height: 241,
             fit: BoxFit.cover,
