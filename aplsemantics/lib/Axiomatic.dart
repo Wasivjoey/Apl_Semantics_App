@@ -5,7 +5,7 @@ class AxiomaticPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(25.0),
-      child: Text("Axiomatic REpresentation"),
+      child: Text("Will come in version 2.0"),
       
     );
   }

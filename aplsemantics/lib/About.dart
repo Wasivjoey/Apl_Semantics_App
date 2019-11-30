@@ -22,6 +22,25 @@ class AboutPage extends StatelessWidget {
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ) ,
                                 ),
+                          ],
+                         )
+          
+      );
+
+          Widget endSection = Container
+      (
+        padding: const EdgeInsets.all(33),
+                          child: Column
+                          (
+                            children: [
+                              Container 
+                              (
+                                child: Text 
+                                (
+                                  'Dwayne Robinson  1502644',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ) ,
+                                ),
                             Text 
                             (
                               'University Of Technology Jamaica',
@@ -53,6 +72,13 @@ class AboutPage extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           titleSection,
+          Image.asset(
+            'dwayne.jpg',
+            width: 400,
+            height: 241,
+            fit: BoxFit.cover,
+          ),
+          endSection , 
 
         ],
         ),
